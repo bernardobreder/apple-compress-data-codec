@@ -1,0 +1,1029 @@
+// !$*UTF8*$!
+{
+   archiveVersion = "1";
+   objectVersion = "46";
+   objects = {
+      OBJ_1 = {
+         isa = "PBXProject";
+         attributes = {
+            LastUpgradeCheck = "9999";
+         };
+         buildConfigurationList = OBJ_2;
+         compatibilityVersion = "Xcode 3.2";
+         developmentRegion = "English";
+         hasScannedForEncodings = "0";
+         knownRegions = (
+            "en",
+         );
+         mainGroup = OBJ_5;
+         productRefGroup = OBJ_28;
+         projectDirPath = ".";
+         targets = (
+            OBJ_35,
+            OBJ_43,
+            OBJ_52,
+            OBJ_63,
+            OBJ_80,
+            OBJ_87,
+         );
+      };
+      OBJ_10 = {
+         isa = "PBXFileReference";
+         path = "DataEncoder.swift";
+         sourceTree = "<group>";
+      };
+      OBJ_100 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_32;
+      };
+      OBJ_101 = {
+         isa = "PBXTargetDependency";
+         target = OBJ_43;
+      };
+      OBJ_102 = {
+         isa = "PBXTargetDependency";
+         target = OBJ_35;
+      };
+      OBJ_103 = {
+         isa = "PBXTargetDependency";
+         target = OBJ_52;
+      };
+      OBJ_104 = {
+         isa = "PBXTargetDependency";
+         target = OBJ_80;
+      };
+      OBJ_105 = {
+         isa = "PBXTargetDependency";
+         target = OBJ_63;
+      };
+      OBJ_11 = {
+         isa = "PBXGroup";
+         children = (
+            OBJ_12,
+            OBJ_13,
+            OBJ_14,
+         );
+         name = "BitSet";
+         path = "Sources/BitSet";
+         sourceTree = "SOURCE_ROOT";
+      };
+      OBJ_12 = {
+         isa = "PBXFileReference";
+         path = "BitSet.swift";
+         sourceTree = "<group>";
+      };
+      OBJ_13 = {
+         isa = "PBXFileReference";
+         path = "BitSetReader.swift";
+         sourceTree = "<group>";
+      };
+      OBJ_14 = {
+         isa = "PBXFileReference";
+         path = "BitSetWriter.swift";
+         sourceTree = "<group>";
+      };
+      OBJ_15 = {
+         isa = "PBXGroup";
+         children = (
+            OBJ_16,
+         );
+         name = "BitSetCodec";
+         path = "Sources/BitSetCodec";
+         sourceTree = "SOURCE_ROOT";
+      };
+      OBJ_16 = {
+         isa = "PBXFileReference";
+         path = "BitSetCodec.swift";
+         sourceTree = "<group>";
+      };
+      OBJ_17 = {
+         isa = "PBXGroup";
+         children = (
+            OBJ_18,
+            OBJ_19,
+            OBJ_20,
+         );
+         name = "CompressDataCodec";
+         path = "Sources/CompressDataCodec";
+         sourceTree = "SOURCE_ROOT";
+      };
+      OBJ_18 = {
+         isa = "PBXFileReference";
+         path = "CompressDataDecoder.swift";
+         sourceTree = "<group>";
+      };
+      OBJ_19 = {
+         isa = "PBXFileReference";
+         path = "CompressDataEncoder.swift";
+         sourceTree = "<group>";
+      };
+      OBJ_2 = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            OBJ_3,
+            OBJ_4,
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Debug";
+      };
+      OBJ_20 = {
+         isa = "PBXFileReference";
+         path = "Huffman.swift";
+         sourceTree = "<group>";
+      };
+      OBJ_21 = {
+         isa = "PBXGroup";
+         children = (
+            OBJ_22,
+         );
+         name = "HeapQueue";
+         path = "Sources/HeapQueue";
+         sourceTree = "SOURCE_ROOT";
+      };
+      OBJ_22 = {
+         isa = "PBXFileReference";
+         path = "HeapQueue.swift";
+         sourceTree = "<group>";
+      };
+      OBJ_23 = {
+         isa = "PBXGroup";
+         children = (
+            OBJ_24,
+         );
+         name = "Tests";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      OBJ_24 = {
+         isa = "PBXGroup";
+         children = (
+            OBJ_25,
+            OBJ_26,
+            OBJ_27,
+         );
+         name = "CompressDataCodecTests";
+         path = "Tests/CompressDataCodecTests";
+         sourceTree = "SOURCE_ROOT";
+      };
+      OBJ_25 = {
+         isa = "PBXFileReference";
+         path = "CompressDataCodecTests.swift";
+         sourceTree = "<group>";
+      };
+      OBJ_26 = {
+         isa = "PBXFileReference";
+         path = "CompressDataEncoderTests.swift";
+         sourceTree = "<group>";
+      };
+      OBJ_27 = {
+         isa = "PBXFileReference";
+         path = "HuffmanTests.swift";
+         sourceTree = "<group>";
+      };
+      OBJ_28 = {
+         isa = "PBXGroup";
+         children = (
+            OBJ_29,
+            OBJ_30,
+            OBJ_31,
+            OBJ_32,
+            OBJ_33,
+            OBJ_34,
+         );
+         name = "Products";
+         path = "";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      OBJ_29 = {
+         isa = "PBXFileReference";
+         path = "DataCodec.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      OBJ_3 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_OBJC_ARC = "YES";
+            COMBINE_HIDPI_IMAGES = "YES";
+            COPY_PHASE_STRIP = "NO";
+            DEBUG_INFORMATION_FORMAT = "dwarf";
+            DYLIB_INSTALL_NAME_BASE = "@rpath";
+            ENABLE_NS_ASSERTIONS = "YES";
+            GCC_OPTIMIZATION_LEVEL = "0";
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            ONLY_ACTIVE_ARCH = "YES";
+            OTHER_SWIFT_FLAGS = (
+               "-DXcode",
+            );
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SDKROOT = "macosx";
+            SUPPORTED_PLATFORMS = (
+               "macosx",
+               "iphoneos",
+               "iphonesimulator",
+               "appletvos",
+               "appletvsimulator",
+               "watchos",
+               "watchsimulator",
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE";
+            SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+            SWIFT_VERSION = "3.0";
+            USE_HEADERMAP = "NO";
+         };
+         name = "Debug";
+      };
+      OBJ_30 = {
+         isa = "PBXFileReference";
+         path = "BitSet.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      OBJ_31 = {
+         isa = "PBXFileReference";
+         path = "BitSetCodec.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      OBJ_32 = {
+         isa = "PBXFileReference";
+         path = "CompressDataCodec.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      OBJ_33 = {
+         isa = "PBXFileReference";
+         path = "HeapQueue.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      OBJ_34 = {
+         isa = "PBXFileReference";
+         path = "CompressDataCodecTests.xctest";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      OBJ_35 = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = OBJ_36;
+         buildPhases = (
+            OBJ_39,
+            OBJ_42,
+         );
+         dependencies = (
+         );
+         name = "DataCodec";
+         productName = "DataCodec";
+         productReference = OBJ_29;
+         productType = "com.apple.product-type.framework";
+      };
+      OBJ_36 = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            OBJ_37,
+            OBJ_38,
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Debug";
+      };
+      OBJ_37 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+            );
+            INFOPLIST_FILE = "CompressDataCodec.xcodeproj/DataCodec_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "DataCodec";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            TARGET_NAME = "DataCodec";
+         };
+         name = "Debug";
+      };
+      OBJ_38 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+            );
+            INFOPLIST_FILE = "CompressDataCodec.xcodeproj/DataCodec_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "DataCodec";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            TARGET_NAME = "DataCodec";
+         };
+         name = "Release";
+      };
+      OBJ_39 = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            OBJ_40,
+            OBJ_41,
+         );
+      };
+      OBJ_4 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_OBJC_ARC = "YES";
+            COMBINE_HIDPI_IMAGES = "YES";
+            COPY_PHASE_STRIP = "YES";
+            DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+            DYLIB_INSTALL_NAME_BASE = "@rpath";
+            GCC_OPTIMIZATION_LEVEL = "s";
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_SWIFT_FLAGS = (
+               "-DXcode",
+            );
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SDKROOT = "macosx";
+            SUPPORTED_PLATFORMS = (
+               "macosx",
+               "iphoneos",
+               "iphonesimulator",
+               "appletvos",
+               "appletvsimulator",
+               "watchos",
+               "watchsimulator",
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE";
+            SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+            SWIFT_VERSION = "3.0";
+            USE_HEADERMAP = "NO";
+         };
+         name = "Release";
+      };
+      OBJ_40 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_9;
+      };
+      OBJ_41 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_10;
+      };
+      OBJ_42 = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
+      };
+      OBJ_43 = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = OBJ_44;
+         buildPhases = (
+            OBJ_47,
+            OBJ_51,
+         );
+         dependencies = (
+         );
+         name = "BitSet";
+         productName = "BitSet";
+         productReference = OBJ_30;
+         productType = "com.apple.product-type.framework";
+      };
+      OBJ_44 = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            OBJ_45,
+            OBJ_46,
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Debug";
+      };
+      OBJ_45 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+            );
+            INFOPLIST_FILE = "CompressDataCodec.xcodeproj/BitSet_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "BitSet";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            TARGET_NAME = "BitSet";
+         };
+         name = "Debug";
+      };
+      OBJ_46 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+            );
+            INFOPLIST_FILE = "CompressDataCodec.xcodeproj/BitSet_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "BitSet";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            TARGET_NAME = "BitSet";
+         };
+         name = "Release";
+      };
+      OBJ_47 = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            OBJ_48,
+            OBJ_49,
+            OBJ_50,
+         );
+      };
+      OBJ_48 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_12;
+      };
+      OBJ_49 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_13;
+      };
+      OBJ_5 = {
+         isa = "PBXGroup";
+         children = (
+            OBJ_6,
+            OBJ_7,
+            OBJ_23,
+            OBJ_28,
+         );
+         path = "";
+         sourceTree = "<group>";
+      };
+      OBJ_50 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_14;
+      };
+      OBJ_51 = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
+      };
+      OBJ_52 = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = OBJ_53;
+         buildPhases = (
+            OBJ_56,
+            OBJ_58,
+         );
+         dependencies = (
+            OBJ_61,
+            OBJ_62,
+         );
+         name = "BitSetCodec";
+         productName = "BitSetCodec";
+         productReference = OBJ_31;
+         productType = "com.apple.product-type.framework";
+      };
+      OBJ_53 = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            OBJ_54,
+            OBJ_55,
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Debug";
+      };
+      OBJ_54 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+            );
+            INFOPLIST_FILE = "CompressDataCodec.xcodeproj/BitSetCodec_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "BitSetCodec";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            TARGET_NAME = "BitSetCodec";
+         };
+         name = "Debug";
+      };
+      OBJ_55 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+            );
+            INFOPLIST_FILE = "CompressDataCodec.xcodeproj/BitSetCodec_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "BitSetCodec";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            TARGET_NAME = "BitSetCodec";
+         };
+         name = "Release";
+      };
+      OBJ_56 = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            OBJ_57,
+         );
+      };
+      OBJ_57 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_16;
+      };
+      OBJ_58 = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            OBJ_59,
+            OBJ_60,
+         );
+      };
+      OBJ_59 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_30;
+      };
+      OBJ_6 = {
+         isa = "PBXFileReference";
+         explicitFileType = "sourcecode.swift";
+         path = "Package.swift";
+         sourceTree = "<group>";
+      };
+      OBJ_60 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_29;
+      };
+      OBJ_61 = {
+         isa = "PBXTargetDependency";
+         target = OBJ_43;
+      };
+      OBJ_62 = {
+         isa = "PBXTargetDependency";
+         target = OBJ_35;
+      };
+      OBJ_63 = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = OBJ_64;
+         buildPhases = (
+            OBJ_67,
+            OBJ_71,
+         );
+         dependencies = (
+            OBJ_76,
+            OBJ_77,
+            OBJ_78,
+            OBJ_79,
+         );
+         name = "CompressDataCodec";
+         productName = "CompressDataCodec";
+         productReference = OBJ_32;
+         productType = "com.apple.product-type.framework";
+      };
+      OBJ_64 = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            OBJ_65,
+            OBJ_66,
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Debug";
+      };
+      OBJ_65 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+            );
+            INFOPLIST_FILE = "CompressDataCodec.xcodeproj/CompressDataCodec_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "CompressDataCodec";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            TARGET_NAME = "CompressDataCodec";
+         };
+         name = "Debug";
+      };
+      OBJ_66 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+            );
+            INFOPLIST_FILE = "CompressDataCodec.xcodeproj/CompressDataCodec_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "CompressDataCodec";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            TARGET_NAME = "CompressDataCodec";
+         };
+         name = "Release";
+      };
+      OBJ_67 = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            OBJ_68,
+            OBJ_69,
+            OBJ_70,
+         );
+      };
+      OBJ_68 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_18;
+      };
+      OBJ_69 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_19;
+      };
+      OBJ_7 = {
+         isa = "PBXGroup";
+         children = (
+            OBJ_8,
+            OBJ_11,
+            OBJ_15,
+            OBJ_17,
+            OBJ_21,
+         );
+         name = "Sources";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      OBJ_70 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_20;
+      };
+      OBJ_71 = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            OBJ_72,
+            OBJ_73,
+            OBJ_74,
+            OBJ_75,
+         );
+      };
+      OBJ_72 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_30;
+      };
+      OBJ_73 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_29;
+      };
+      OBJ_74 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_31;
+      };
+      OBJ_75 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_33;
+      };
+      OBJ_76 = {
+         isa = "PBXTargetDependency";
+         target = OBJ_43;
+      };
+      OBJ_77 = {
+         isa = "PBXTargetDependency";
+         target = OBJ_35;
+      };
+      OBJ_78 = {
+         isa = "PBXTargetDependency";
+         target = OBJ_52;
+      };
+      OBJ_79 = {
+         isa = "PBXTargetDependency";
+         target = OBJ_80;
+      };
+      OBJ_8 = {
+         isa = "PBXGroup";
+         children = (
+            OBJ_9,
+            OBJ_10,
+         );
+         name = "DataCodec";
+         path = "Sources/DataCodec";
+         sourceTree = "SOURCE_ROOT";
+      };
+      OBJ_80 = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = OBJ_81;
+         buildPhases = (
+            OBJ_84,
+            OBJ_86,
+         );
+         dependencies = (
+         );
+         name = "HeapQueue";
+         productName = "HeapQueue";
+         productReference = OBJ_33;
+         productType = "com.apple.product-type.framework";
+      };
+      OBJ_81 = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            OBJ_82,
+            OBJ_83,
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Debug";
+      };
+      OBJ_82 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+            );
+            INFOPLIST_FILE = "CompressDataCodec.xcodeproj/HeapQueue_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "HeapQueue";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            TARGET_NAME = "HeapQueue";
+         };
+         name = "Debug";
+      };
+      OBJ_83 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+            );
+            INFOPLIST_FILE = "CompressDataCodec.xcodeproj/HeapQueue_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "HeapQueue";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            TARGET_NAME = "HeapQueue";
+         };
+         name = "Release";
+      };
+      OBJ_84 = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            OBJ_85,
+         );
+      };
+      OBJ_85 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_22;
+      };
+      OBJ_86 = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
+      };
+      OBJ_87 = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = OBJ_88;
+         buildPhases = (
+            OBJ_91,
+            OBJ_95,
+         );
+         dependencies = (
+            OBJ_101,
+            OBJ_102,
+            OBJ_103,
+            OBJ_104,
+            OBJ_105,
+         );
+         name = "CompressDataCodecTests";
+         productName = "CompressDataCodecTests";
+         productReference = OBJ_34;
+         productType = "com.apple.product-type.bundle.unit-test";
+      };
+      OBJ_88 = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            OBJ_89,
+            OBJ_90,
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Debug";
+      };
+      OBJ_89 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+            );
+            INFOPLIST_FILE = "CompressDataCodec.xcodeproj/CompressDataCodecTests_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "@loader_path/../Frameworks",
+               "@loader_path/Frameworks",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            TARGET_NAME = "CompressDataCodecTests";
+         };
+         name = "Debug";
+      };
+      OBJ_9 = {
+         isa = "PBXFileReference";
+         path = "DataDecoder.swift";
+         sourceTree = "<group>";
+      };
+      OBJ_90 = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+            );
+            INFOPLIST_FILE = "CompressDataCodec.xcodeproj/CompressDataCodecTests_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "@loader_path/../Frameworks",
+               "@loader_path/Frameworks",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            TARGET_NAME = "CompressDataCodecTests";
+         };
+         name = "Release";
+      };
+      OBJ_91 = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            OBJ_92,
+            OBJ_93,
+            OBJ_94,
+         );
+      };
+      OBJ_92 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_25;
+      };
+      OBJ_93 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_26;
+      };
+      OBJ_94 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_27;
+      };
+      OBJ_95 = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            OBJ_96,
+            OBJ_97,
+            OBJ_98,
+            OBJ_99,
+            OBJ_100,
+         );
+      };
+      OBJ_96 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_30;
+      };
+      OBJ_97 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_29;
+      };
+      OBJ_98 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_31;
+      };
+      OBJ_99 = {
+         isa = "PBXBuildFile";
+         fileRef = OBJ_33;
+      };
+   };
+   rootObject = OBJ_1;
+}
